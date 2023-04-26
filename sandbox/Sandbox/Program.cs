@@ -8,3 +8,9 @@ class Program
         
     }
 }
+//cd
+// vertion control is what allows us to go back to old vertions git
+//git push
+// dotnet build makes the exe
+// dotnet run runs the program
+// 

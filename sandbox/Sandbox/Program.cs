@@ -4,7 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World.");
+        Random randomgen = new Random();
+        int rannum = randomgen.Next(1,101);
+        
+        Console.WriteLine(rannum);
         
     }
 }

@@ -17,3 +17,9 @@ class Program
 // dotnet build makes the exe
 // dotnet run runs the program
 // 
+// When planning for clsasses go 
+// Class name
+// Responsiblility
+// Methods needed
+// attributes
+// 

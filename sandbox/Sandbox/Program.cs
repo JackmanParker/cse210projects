@@ -1,5 +1,5 @@
 using System;
-
+using System.Linq;
 class Program
 {
     static void Main(string[] args)
@@ -8,6 +8,12 @@ class Program
         int rannum = randomgen.Next(1,101);
         
         Console.WriteLine(rannum);
+
+        List<string> array;
+        string testsentence = "I am number one.";
+        Console.WriteLine(testsentence);
+        array = testsentence.Split(" ").ToList();
+        Console.WriteLine(array);
         
     }
 }

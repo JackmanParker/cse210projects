@@ -33,11 +33,61 @@ namespace Develop03{
 
         public void HideWord()
         {
+            Console.Clear();
+            bool wordstatus = false;
+           while(wordstatus == false)
+           {
             Random random = new Random();
             int randomIndex = random.Next(0, _wordList.Count);
             Word randomWord = _wordList[randomIndex];
+            if(randomWord.Status() == true){
+                wordstatus = true;
+                randomWord.Hide();
+            }
+           }
             
-            randomWord.Hide();
+
+            
+        }
+        public void ShowWord()
+        {
+            Console.Clear();
+            bool wordstatus = false;
+           while(wordstatus == false)
+           {
+            Random random = new Random();
+            int randomIndex = random.Next(0, _wordList.Count);
+            Word randomWord = _wordList[randomIndex];
+            if(randomWord.Status() == false){
+                wordstatus = true;
+                randomWord.Show();
+            }
+           }
+            
+
+            
+        }
+        public bool CheckHidden()
+        {
+            bool hidden = true;
+            foreach (Word word in _wordList){
+                if (word.Status() == true){
+                    hidden = false;
+                }
+            }
+
+            return hidden;
+        }
+        public bool CheckShown()
+        {
+            bool shown = true;
+            foreach (Word word in _wordList){
+                if (word.Status() == false){
+                    shown = false;
+                }
+            }
+
+            return shown;
         }
 
     }

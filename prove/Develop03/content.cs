@@ -4,30 +4,28 @@ using System.Collections.Generic;
 
 namespace Develop03{
     class Content{
-        private List<Word> _textList;
+        
+        private string _text;
         public Content(string words){
-            _textList = new List<Word>();
-            List<string> stringlist;
-            stringlist = words.Split(" ").ToList();
-            foreach (string item in stringlist){
-                Word newword = new Word(item);
-                _textList.Add(newword);
-            }
+           _text = words;
         }
 
         public Content(){
-            string words = "This is my default scripture";
-            _textList = new List<Word>();
-            List<string> stringlist;
-            stringlist = words.Split(" ").ToList();
-            foreach (string item in stringlist){
-                Word newword = new Word(item);
-                _textList.Add(newword);
-            }
+            _text = "And thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind, and with all thy strength: this is the first commandment.";
         }
 
         public List<Word> GiveWords(){
-            return _textList;
+            
+            
+            List<Word> textList = new List<Word>();
+            List<string> stringlist;
+            stringlist = _text.Split(" ").ToList();
+            foreach (string item in stringlist){
+                Word newword = new Word(item);
+                textList.Add(newword);
+            }
+            
+            return textList;
         }
 
     }

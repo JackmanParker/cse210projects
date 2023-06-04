@@ -1,6 +1,7 @@
 
 
-public class MathAssignment : Assignment
+public class MathAssignment : Assignment 
+//Creates a class with a parent class after the :
 {
     
     private string _textbookSection;
@@ -13,6 +14,7 @@ public class MathAssignment : Assignment
     }
     public MathAssignment(string name, string topic, string textbookSection, string problems) : base (name, topic)
     {
+        // The constructer still needs it all written out, but the constucets can be used rom the other class using Base
         _textbookSection = textbookSection;
         _problems = problems;
     }

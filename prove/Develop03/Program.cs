@@ -43,7 +43,18 @@ namespace Develop03
             {
                 
                 for (int i = 0; i < 4; i++)
-                    {testscripture.HideWord();}
+                    {
+                        if (testscripture.CheckHidden() == true)
+                        {
+                        break;
+                        }   
+                        else
+                        {
+                            testscripture.HideWord();
+                        }
+                        
+                        
+                    }
             }
             
            

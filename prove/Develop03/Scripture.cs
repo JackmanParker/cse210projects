@@ -44,6 +44,9 @@ namespace Develop03{
                 wordstatus = true;
                 randomWord.Hide();
             }
+            else{
+                wordstatus = false;
+            }
            }
             
 

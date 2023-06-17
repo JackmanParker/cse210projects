@@ -14,11 +14,12 @@ public class MathAssignment : Assignment
     }
     public MathAssignment(string name, string topic, string textbookSection, string problems) : base (name, topic)
     {
-        // The constructer still needs it all written out, but the constucets can be used rom the other class using Base
+        // The constructer still needs it all written out, but the constucets can be used rom the other class using base
         _textbookSection = textbookSection;
         _problems = problems;
     }
-    public string GetHomework(){
+    public string GetHomework()
+    {
         return $"{_textbookSection} problems:{_problems}"; 
     }
 }

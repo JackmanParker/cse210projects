@@ -56,7 +56,6 @@ namespace Develop04{
             pauseAnimation.Add("-");
             pauseAnimation.Add("\\");
             pauseAnimation.Add("|");
-            
 
             DateTime startTime = DateTime.Now;
             DateTime endTime = startTime.AddSeconds(5);

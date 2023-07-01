@@ -1,0 +1,8 @@
+4
+SimpleGoal,,Jump,,2,,Jump 20 feet,,True
+SimpleGoal,,Run,,2,,Run 20 feet,,True
+EternalGoal,,read,,1,,Read Scriptures,,False
+ChecklistGoal,,Date,,3,,Go on a date with celsete,,False,,20,,3,,0
+SimpleGoal,,eat,,1,,Eat a meal with Seth,,False
+SimpleGoal,,Eat,,1,,Eat a Meal with dad,,False
+SimpleGoal,,Eat,,2,,Eat with Abby,,False

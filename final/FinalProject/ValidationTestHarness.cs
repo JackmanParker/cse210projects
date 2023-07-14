@@ -11,7 +11,7 @@ namespace FinalProject
        }
        public void RunValidationTests()
        {    
-            Console.WriteLine("What input would you like to test?");
+            Console.WriteLine("Type string you would like to validate: ");
             string userInput = Console.ReadLine();
             IntegerValidator testIntegerValidator = new IntegerValidator();
             StringValidator testStringValidator = new StringValidator(); 
@@ -27,7 +27,7 @@ namespace FinalProject
 
        public void TestFilters()
         {
-            Console.WriteLine("What would you like filtered?");
+            Console.WriteLine("Type string you would like to filter: ");
             string prefitered = Console.ReadLine();
             Console.WriteLine("Sexual Filter");
             SexualFilter sexual = new SexualFilter(prefitered);

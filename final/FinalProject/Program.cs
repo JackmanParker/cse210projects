@@ -29,6 +29,16 @@ namespace FinalProject
                     Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                 }
+                if (userChoice == 3)
+                {
+                    testHarnesss.RunValidationTests();
+                    Console.WriteLine("Press enter to continue");
+                    Console.ReadLine();
+
+                    testHarnesss.TestFilters();
+                    Console.WriteLine("Press enter to continue");
+                    Console.ReadLine();
+                }
             }
         }
     }
